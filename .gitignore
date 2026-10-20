@@ -1,0 +1,7 @@
+data/
+*.gz
+*_book.csv
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
