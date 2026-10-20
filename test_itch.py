@@ -1,6 +1,6 @@
 import gzip
 
-from itch import messages, raw_messages, formats, parse
+from itch import formats, messages, parse, raw_messages
 from make_sample import (
     add,
     clock,
