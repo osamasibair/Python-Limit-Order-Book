@@ -31,7 +31,7 @@ python replay.py data/sample.itch.gz DEMO
 For real data, download a file from [emi.nasdaq.com/ITCH](https://emi.nasdaq.com/ITCH/) into `data/`, then:
 
 ```bash
-python replay.py data/20200130.BX_ITCH_50 SPY --until XX:XX #insert timeframe
+python replay.py data/20200130.BX_ITCH_50 SPY --until 10:30
 ```
 
 ## Results
@@ -39,6 +39,7 @@ python replay.py data/20200130.BX_ITCH_50 SPY --until XX:XX #insert timeframe
 SPY on Nasdaq BX, 30 Jan 2020, 09:30–10:30:
 
 - Average spread: **3.1 cents**
+- Replaying the hour took 7.4 seconds on a MacBook Air: 337,411 SPY book messages, about 45,000 a second, while also scanning and skipping every other stock's messages in the feed.
 - **99% of orders were cancelled** rather than filled (165,868 adds, 164,442 deletes, about 1,800 executions), the high frequency market makers constantly requoting.
 - Top 5 level imbalance predicted the next mid move **51%** of the time, so no edge. BX holds a small share of SPY's liquidity, and its book alone has little signal.
 
