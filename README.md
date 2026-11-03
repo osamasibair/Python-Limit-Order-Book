@@ -1,5 +1,7 @@
 # Python Limit Order Book
 
+![tests](https://github.com/osamasibair/Python-Limit-Order-Book/actions/workflows/tests.yml/badge.svg)
+
 A limit order book built from real Nasdaq market data. It reads a TotalView-ITCH 5.0 file, rebuilds one stocks order book message by message, and records the top of the book every second.
 
 ## What it does
